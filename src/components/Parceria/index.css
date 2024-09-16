@@ -1,0 +1,29 @@
+.parceria{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color--yellow--quartzolit);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--color--black--quartzolit);
+}
+
+.parceria__container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    border: 3px solid var(--color--black--quartzolit);
+}
+
+.parceria__container h1{
+    width: 40%;
+    text-align: left;
+}
+
+.parceria__container img{
+    width: 40%;
+    object-fit: contain;
+}

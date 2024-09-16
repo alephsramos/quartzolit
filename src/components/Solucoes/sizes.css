@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+    .solucoes__title h1{
+        font-size: 2.6rem;
+    }
+    .solucoes__item h2{
+        font-size: 1.8rem;
+    }
+    
+    .solucoes__item p{
+        font-size: 0.9rem;
+    }
+    .solucoes__qualidades div p{
+        font-size: 0.7rem
+    }
+    .solucoes__item button{
+        font-size: 0.9rem;
+    }
+}

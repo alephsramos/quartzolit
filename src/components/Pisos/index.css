@@ -1,0 +1,131 @@
+.pisos{
+    height: 80dvh;
+    margin-top: 5%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.pisos__title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.pisos__title h1{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.pisos__title h1::before{
+    content: '';
+    width: 60%;
+    height: 40%;
+    left: 4%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color--purple--quartzolit);
+}
+
+.pisos__title p{
+    width: 80%;
+}
+
+.pisos__glider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pisos__glider .glider-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pisos__glider div img {
+    object-fit: contain;
+    object-position: center;
+    height: 45vh;
+    border: 1px solid red;
+}
+
+.pisos__container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pisos__item{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid var(--color--black--quartzolit);
+    background-color: var(--color--purple--quartzolit);
+    border-radius: var(--border--radius);
+    padding: 20px;
+}
+
+.pisos__img{
+    width: 20%;
+    height: 100%;
+}
+
+.pisos__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pisos__text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    color: var(--background--white);
+}
+
+/* .pisos__text h2{
+} */
+
+.pisos__btn{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.pisos__btn button{
+    padding: 10px 15px;
+    border-radius: var(--border--radius);
+    background-color: var(--background--white);
+    font-weight: 600;
+    color: var(--color--black--quartzolit);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}

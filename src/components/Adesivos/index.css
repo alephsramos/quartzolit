@@ -1,0 +1,131 @@
+.adesivos{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/img/background__adesivo.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.adesivos__title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.adesivos__title h1{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.adesivos__title h1::before{
+    content: '';
+    width: 60%;
+    height: 40%;
+    right: 15%;
+    bottom: -5%;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color--red--fast);
+}
+
+.adesivos__title p{
+    width: 80%;
+}
+
+.adesivo__indica{
+    background-color: var(--color--red--fast);
+    border-radius: var(--border--radius);
+    padding: 10px;
+    width: 40%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.adesivo__indica img{
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.adesivo__indica p{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--background--white);
+}
+
+.adesivos__btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.adesivos__btns button{
+    border: 2px solid var(--color--black--quartzolit);
+    padding: 10px;
+    border-radius: var(--border--radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.adesivos__btns button:hover{
+    background-color: var(--color--red--fast);
+    color: var(--background--white);
+}
+
+.adesivos__btns button.active {
+    background-color: var(--color--red--fast);
+    color: var(--background--white);
+}
+
+.adesivos__imgs{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adesivos__imgs img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.adesivos__imgs button{
+    height: 10%;
+    padding: 10px;
+    background-color: var(--color--red--fast);
+    color: var(--background--white);
+    border-radius: var(--border--radius);
+    border: 2px solid var(--color--black--quartzolit);
+    font-weight: 600;
+    cursor: pointer;
+}

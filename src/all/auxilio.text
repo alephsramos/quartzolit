@@ -1,0 +1,14 @@
+/* Dispositivos móveis */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móveis (celulares e tablets) */
+}
+
+/* Dispositivos médios (tablets e pequenos desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para tablets e pequenos desktops */
+}
+
+/* Dispositivos grandes (desktops) */
+@media (min-width: 1025px) {
+  /* Estilos para desktops */
+}

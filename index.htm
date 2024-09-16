@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/all/reset.css">
+    <link rel="stylesheet" href="src/all/all.css">
+    <link rel="stylesheet" href="src/all/animate.css">
+
+    <link rel="stylesheet" href="src/components/Navbar/index.css">
+    <link rel="stylesheet" href="src/components/Navbar/responsive.css">
+    <link rel="stylesheet" href="src/components/Navbar/sizes.css">
+    <link rel="stylesheet" href="src/components/Home/index.css">
+    <link rel="stylesheet" href="src/components/Home/responsive.css">
+    <link rel="stylesheet" href="src/components/Home/sizes.css">
+    <link rel="stylesheet" href="src/components/Produto/index.css">
+    <link rel="stylesheet" href="src/components/Produto/responsive.css">
+    <link rel="stylesheet" href="src/components/Produto/sizes.css">
+    <link rel="stylesheet" href="src/components/Argamassa/index.css">
+    <link rel="stylesheet" href="src/components/Argamassa/responsive.css">
+    <link rel="stylesheet" href="src/components/Argamassa/sizes.css">
+    <link rel="stylesheet" href="src/components/Solucoes/index.css">
+    <link rel="stylesheet" href="src/components/Solucoes/responsive.css">
+    <link rel="stylesheet" href="src/components/Solucoes/sizes.css">
+    <link rel="stylesheet" href="src/components/Pisos/index.css">
+    <link rel="stylesheet" href="src/components/Pisos/reponsive.css">
+    <link rel="stylesheet" href="src/components/Pisos/sizes.css">
+    <link rel="stylesheet" href="src/components/Adesivos/index.css">
+    <link rel="stylesheet" href="src/components/Adesivos/responsive.css">
+    <link rel="stylesheet" href="src/components/Adesivos/sizes.css">
+    <link rel="stylesheet" href="src/components/Impermeabilizantes/index.css">
+    <link rel="stylesheet" href="src/components/Impermeabilizantes/responsive.css">
+    <link rel="stylesheet" href="src/components/Impermeabilizantes/sizes.css">
+    <link rel="stylesheet" href="src/components/Parceria/index.css">
+    <link rel="stylesheet" href="src/components/Parceria/responsive.css">
+    <link rel="stylesheet" href="src/components/Parceria/sizes.css">
+    <link rel="stylesheet" href="src/components/Form/index.css">
+    <link rel="stylesheet" href="src/components/Form/responsive.css">
+    <link rel="stylesheet" href="src/components/Form/sizes.css">
+    <link rel="stylesheet" href="src/components/Rodape/index.css">
+    <link rel="stylesheet" href="src/components/Rodape/responsive.css">
+    <link rel="stylesheet" href="src/components/Rodape/sizes.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+
+    <script defer src="src/scripts/animate.js"></script>
+
+    <title>Fast & Quartzolit</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <section>
+            <div class="nav__logo">
+                <a href="#"> <img src="assets/img/fast&quartzolit.svg" alt="logo da fast com a quartzolit"> </a>
+            </div>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Parceria</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Materiais</a></li>
+            </ul>
+            <div class="nav__pesquisa">
+                <input type="search" name="search" placeholder="O que você busca encontrar?" id="search">
+                <button id="serchButton"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+            <button id="navButton">
+                Fazer orçamento agora
+                <hr>
+                <i class="fa-solid fa-circle-check"></i>
+            </button>
+        </section>
+    </nav>
+
+    <nav class="nav__mobile" id="navMobile"> 
+        <a href="#"> <img src="assets/img/fast&quartzolit.svg" alt="logo da fast com a quartzolit"> </a>
+        <div>
+            <div class="nav__pesquisa">
+                <input type="search" name="search" placeholder="O que você busca encontrar?" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <button id="openSidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="nav__sidebar" id="navSidebar">
+        <ul>
+            <li><a href="#">Direção 1</a></li>
+            <li><a href="#">Direção 2</a></li>
+            <li><a href="#">Direção 3</a></li>
+            <li><a href="#">Direção 4</a></li>
+        </ul>
+        <button id="navButton">
+            Fazer orçamento agora
+            <hr>
+            <i class="fa-solid fa-circle-check"></i>
+        </button>
+    </section>
+
+    <main class="home">
+        <div class="glider-contain">
+            <div class="glider">
+              <div>
+                <img src="assets/img/produtos/banner-texturacrill.png" alt="banner">
+              </div>
+              <div>
+                <img src="assets/img/banner__teste2.jpg" alt="banner">
+              </div>
+              <div>
+                <img src="assets/img/banner__teste3.jpg" alt="banner">
+              </div>
+            </div>
+            <div class="dots"></div> 
+          </div>
+    </main>
+
+    <script src="src/scripts/carrossel.js"></script>
+
+    <div class="faixa">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <section class="home__filtro">
+        <div class="home__left">
+            <h1>Vá direto para o que <b>te interessa!</b></h1>
+            <p>A Quartzolit, líder mundial em argamassas industrializadas, oferece soluções de alta tecnologia para atender às demandas do mercado. Com produtos como argamassas, rejuntes, impermeabilizantes, adesivos, selantes e limpadores, a empresa é referência em qualidade na construção. Fundada na França em 1904, a Quartzolit está presente na Europa, Ásia e América do Sul, destacando-se pela inovação e excelência.</p>
+            <div class="home__left__btns">
+                <button> <i class="fa-solid fa-trowel"></i> Argamassas </button>
+                <button> <i class="fa-solid fa-hammer"></i> Rejuntes </button>
+                <button> <i class="fa-solid fa-screwdriver"></i> impermeabilizantes </button>
+                <button> <i class="fa-solid fa-paint-roller"></i> Adesivos </button>
+                <button> <i class="fa-solid fa-trowel"></i> Selantes </button>
+                <button> <i class="fa-solid fa-hammer"></i> Limpadores </button>
+                <button> <i class="fa-solid fa-screwdriver"></i> Capa </button>
+                <button> <i class="fa-solid fa-paint-roller"></i> Entrega </button>
+                <button> <i class="fa-solid fa-paint-roller"></i> Frete </button>
+            </div>
+        </div>
+        <div class="home__right">
+            <img src="assets/img/quartzolit-novo-fixtudo_03.png">
+        </div>
+    </section>
+
+    <div class="faixa" style=" background-color: var(--color--purple--quartzolit); color: var(--background--white)">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <main class="produtos">
+        <section class="produtos__top">
+            <div class="produtos__title">
+                <h1>Entenda tudo sobre <b>cada produto nosso!</b></h1>
+                <p>Aqui, prezamos pela qualidade, sempre oferecendo os melhores produtos com os melhores preços.</p>
+            </div>
+            <div class="produtos__img">
+                <img src="assets/img/fast&quartzolit.svg" alt="imagem da logo da fast com a quartzolit">
+            </div>
+        </section>
+        <section class="produtos__center">
+            <div class="produtos__container">
+                <div class="produtos__container__left">
+                    <img src="assets/img/products/argamassa_cimenticola.png" alt="cimenticola da placo quartzolit">
+                    <div class="produtos__name">
+                        <h2>CIMENTCOLA FLEXIVEL AC3</h2>
+                        <p>Cimentcola para sobreposição e assentamentos.</p>
+                    </div>
+                </div>
+                <div class="produtos__container__center">
+                    <p>Produto mais comprado</p>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="toggleProduct">
+                    <span>Ver mais</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="produto__open">
+                <div class="produto__open__left">
+                    <h1>CIMENTCOLA FLEXIVEL AC3</h1>
+                    <p>Certifique-se de que a base e o verso das placas estão secos, limpos e livres de resíduos.
+                        Para proteger os revestimentos contra dilatações, utilize as juntas estruturais necessárias, determinadas pelo projetista ou fornecedor do revestimento cerâmico.
+                        Proteja as peças de alumínio.
+                        Verifique suas ferramentas de trabalho e equipamentos de segurança.
+                        A temperatura do ambiente de trabalho pode afetar as condições do produto, consulte a embalagem.
+                        Use EPIs adequados (luvas, respirador, capacete, calçados de segurança, óculos de proteção e protetor auricular).
+                    </p>
+                    <div class="produto__open__left__hashtags">
+                        <span>#maisvendido</span>
+                        <span>#rejunte</span>
+                        <span>#melhoravaliação</span>
+                        <span>#fastquartzolit</span>
+                        <span>#steelframe</span>
+                        <span>#fastdrywall</span>
+                        <span>#quartzolit</span>
+                    </div>
+                    <button>Solicitar meu orçamento agora!</button>
+                </div>
+                <div class="glider__two">
+                    <div>
+                        <img src="assets/img/products/argamassa_cimenticola.png" alt="produto cimenticola da placo quartzolit">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                </div>
+                <div class="dots__two"></div> 
+                <script src="src/scripts/carrossel2.js"></script>
+            </div>
+        </section>
+
+        <section class="produtos__center">
+            <div class="produtos__container">
+                <div class="produtos__container__left">
+                    <img src="assets/img/products/imper_manta_liquida.png" alt="preview do produto">
+                    <div class="produtos__name">
+                        <h2>MANTA LIQUIDA BRANCA</h2>
+                        <p>Manta líquida branca quartzolit é um impermeabilizante flexível e elástico.</p>
+                    </div>
+                </div>
+                <div class="produtos__container__center">
+                    <p>Produto mais bem avaliado</p>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="toggleProduct">
+                    <span>Ver mais</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="produto__open">
+                <div class="produto__open__left">
+                    <h1>MANTA LIQUIDA BRANCA</h1>
+                    <p></p>
+                    <div class="produto__open__left__hashtags">
+                        <span>#maisvendido</span>
+                        <span>#rejunte</span>
+                        <span>#melhoravaliação</span>
+                        <span>#fastquartzolit</span>
+                        <span>#steelframe</span>
+                        <span>#fastdrywall</span>
+                        <span>#quartzolit</span>
+                    </div>
+                    <button>Solicitar meu orçamento agora!</button>
+                </div>
+                <div class="glider__two">
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                </div>
+                <div class="dots__two"></div> 
+                <script src="src/scripts/carrossel2.js"></script>
+            </div>
+        </section>
+
+        <section class="produtos__center">
+            <div class="produtos__container">
+                <div class="produtos__container__left">
+                    <img src="assets/img/fixtudo.png" alt="preview do produto">
+                    <div class="produtos__name">
+                        <h2>Nome do produto</h2>
+                        <p>Breve descrição sobre o produto</p>
+                    </div>
+                </div>
+                <div class="produtos__container__center">
+                    <p>Produto mais usado</p>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="toggleProduct">
+                    <span>Ver mais</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="produto__open">
+                <div class="produto__open__left">
+                    <h1>Nome do produto</h1>
+                    <p>Descrição completa do produto</p>
+                    <div class="produto__open__left__hashtags">
+                        <span>#maisvendido</span>
+                        <span>#rejunte</span>
+                        <span>#melhoravaliação</span>
+                        <span>#fastquartzolit</span>
+                        <span>#steelframe</span>
+                        <span>#fastdrywall</span>
+                        <span>#quartzolit</span>
+                    </div>
+                    <button>Solicitar meu orçamento agora!</button>
+                </div>
+                <div class="glider__two">
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                </div>
+                <div class="dots__two"></div> 
+                <script src="src/scripts/carrossel2.js"></script>
+            </div>
+        </section>
+        
+        <section class="produtos__center">
+            <div class="produtos__container">
+                <div class="produtos__container__left">
+                    <img src="assets/img/fixtudo.png" alt="preview do produto">
+                    <div class="produtos__name">
+                        <h2>Nome do produto</h2>
+                        <p>Breve descrição sobre o produto</p>
+                    </div>
+                </div>
+                <div class="produtos__container__center">
+                    <p>Produto mais comprado</p>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <button class="toggleProduct">
+                    <span>Ver mais</span>
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="produto__open">
+                <div class="produto__open__left">
+                    <h1>Nome do produto</h1>
+                    <p>Descrição completa do produto</p>
+                    <div class="produto__open__left__hashtags">
+                        <span>#maisvendido</span>
+                        <span>#rejunte</span>
+                        <span>#melhoravaliação</span>
+                        <span>#fastquartzolit</span>
+                        <span>#steelframe</span>
+                        <span>#fastdrywall</span>
+                        <span>#quartzolit</span>
+                    </div>
+                    <button>Solicitar meu orçamento agora!</button>
+                </div>
+                <div class="glider__two">
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                    <div>
+                        <img src="assets/img/fixtudo.png" alt="banner">
+                    </div>
+                </div>
+                <div class="dots__two"></div> 
+                <script src="src/scripts/carrossel2.js"></script>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="faixa" style=" background-color: var(--color--red--fast); color: var(--background--white); margin-top: 2%;">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+    
+    <main class="argamassa">
+        <section class="argamassa__left">
+            <div class="argamassa__grid">
+                <div class="argamassa__item argamassa__item1"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item2"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item3"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item4"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item5"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item6"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item7"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+                <div class="argamassa__item argamassa__item8"><img src="assets/img/banner__teste3.jpg" alt="produto 1"></div>
+            </div>            
+        </section>
+        <section class="argamassa__right">
+            <div class="argamassa__title">
+                <h1>Argamassas e Rejuntes</h1>
+                <p>Conheça a linha completa de soluções para assentamento em áreas internas e externas.</p>
+            </div>
+            <div class="argamassa__container">
+                <img src="assets/img/produtos/tecplus.png">
+                <img src="assets/img/produtos/tecplus.png">
+            </div>
+            <button>Solicitar meu orçamento agora!</button>
+        </section>
+    </main>
+
+    <div class="faixa">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <main class="solucoes">
+        <section class="solucoes__title">
+            <h1>Conheça as soluções para os seus problemas</h1>
+            <p>Aqui temos tudo para garantir que você resolva seus problemas, com a melhor qualidade do mercado!</p>
+        </section>
+        <section class="solucoes__container">
+            <div class="solucoes__item">
+                <h2>Reparos</h2>
+                <img src="assets/img/fixtudo.png" alt="produto para solução de reparos">
+                <p>Produto pronto formulado à base de cimento Portland, agregados classificados, aditivos especiais, polímeros e inibidores de corrosão que, quando misturados.</p>
+                <div class="solucoes__qualidades">    
+                    <div>
+                        <p>Qualidade</p>
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div>
+                        <p>Indicado</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <div>
+                        <p>#FastIndica</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                </div>
+                <button>Fazer meu orçamento agora!</button>
+            </div>
+
+            <div class="solucoes__item">
+                <h2>Proteção</h2>
+                <img src="assets/img/fixtudo.png" alt="produto para solução de reparos">
+                <p>Produto pronto formulado à base de cimento Portland, agregados classificados, aditivos especiais, polímeros e inibidores de corrosão que, quando misturados.</p>
+                <div class="solucoes__qualidades">    
+                    <div>
+                        <p>Qualidade</p>
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div>
+                        <p>Indicado</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <div>
+                        <p>#FastIndica</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                </div>
+                <button>Fazer meu orçamento agora!</button>
+            </div>
+
+            <div class="solucoes__item">
+                <h2>Reforço</h2>
+                <img src="assets/img/fixtudo.png" alt="produto para solução de reparos">
+                <p>Produto pronto formulado à base de cimento Portland, agregados classificados, aditivos especiais, polímeros e inibidores de corrosão que, quando misturados.</p>
+                <div class="solucoes__qualidades">    
+                    <div>
+                        <p>Qualidade</p>
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div>
+                        <p>Indicado</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <div>
+                        <p>#FastIndica</p>
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                </div>
+                <button>Fazer meu orçamento agora!</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="faixa" style=" background-color: var(--color--purple--quartzolit); color: var(--background--white); margin-top: 5%;">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <main class="pisos">
+        <section class="pisos__title">
+            <h1>Pisos Vinílicos</h1>
+            <p>Saiba quais são as melhores soluções para pisos e qual vai se encaixar melhor na sua obra.</p>
+            <div class="pisos__glider">
+                <div class="pisos__glider-slide">
+                    <img src="assets/img/fixtudo.png" alt="Slide 1">
+                </div>
+                <div class="pisos__glider-slide">
+                    <img src="assets/img/fixtudo.png" alt="Slide 2">
+                </div>
+                <div class="pisos__glider-slide">
+                    <img src="assets/img/fixtudo.png" alt="Slide 3">
+                </div>
+            </div>
+        </section>
+
+        <script src="src/scripts/carrosselPisos.js"></script>
+
+        <section class="pisos__container">
+            <div class="pisos__item">
+                <div class="pisos__img">
+                    <img src="assets/img/fixtudo.png">
+                </div>
+                <div class="pisos__text">
+                    <h2>Nome do produto</h2>
+                    <p>Breve descrição do produto</p>
+                </div>
+                <div class="pisos__btn">
+                    <button>
+                        Orçamento
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="pisos__item">
+                <div class="pisos__img">
+                    <img src="assets/img/fixtudo.png">
+                </div>
+                <div class="pisos__text">
+                    <h2>Nome do produto</h2>
+                    <p>Breve descrição do produto</p>
+                </div>
+                <div class="pisos__btn">
+                    <button>
+                        Orçamento
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="pisos__item">
+                <div class="pisos__img">
+                    <img src="assets/img/fixtudo.png">
+                </div>
+                <div class="pisos__text">
+                    <h2>Nome do produto</h2>
+                    <p>Breve descrição do produto</p>
+                </div>
+                <div class="pisos__btn">
+                    <button>
+                        Orçamento
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="faixa" style=" background-color: var(--color--red--fast); color: var(--background--white); margin-top: 5%;">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <main class="adesivos">
+        <section class="adesivos__title">
+            <h1>Adesivos e Selantes</h1>
+            <p>A quartzolit possui agora uma nova linha de Adesivos e Selantes, categorizada por soluções de serviços rápidos para selar, vedar e fixar, ao estilo “Faça Você Mesmo”.</p>
+
+            <div class="adesivo__indica">
+                <img src="assets/img/fast-white.svg">
+                <p>Fast Drywall indica esse produto!</p>
+            </div>
+
+            <div class="adesivos__btns">
+                <button data-image="silicone.jpg">Silicones <i class="fa-solid fa-trowel"></i></button>
+                <button data-image="selantes.jpg">Selantes para vedação <i class="fa-solid fa-trowel"></i></button>
+                <button data-image="adesivos-especiais.jpg">Adesivos especiais <i class="fa-solid fa-trowel"></i></button>
+                <button data-image="colas.jpg">Colas brancas <i class="fa-solid fa-trowel"></i></button>
+                <button data-image="espuma.jpg">Espuma expansiva <i class="fa-solid fa-trowel"></i></button>
+            </div>
+        </section>
+        <section class="adesivos__imgs">
+            <img src="assets/img/fixtudo.png" alt="produto selecionado" id="produto-img">
+            <button>Fazer meu orçamento agora!</button>
+        </section>
+
+        <script src="src/scripts/adesivos.js"></script>
+
+    </main>
+
+    <div class="faixa" style="margin-top: 2%;">
+        <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <main class="imper">
+        <section class="imper__produto">
+            <img src="assets/img/fixtudo.png" alt="produto selecionado" id="produto-img-imper">
+            <button>Fazer orçamento agora!</button>
+        </section>
+        
+        <section class="imper__title">
+            <h1>Impermeabilizantes</h1>
+            <p>Para prevenir ou corrigir, a quartzolit possui uma linha completa de impermeabilizantes categorizados por ambientes, para facilitar a escolha do produto correto e eliminar mofo, bolor e umidade de uma vez.</p>
+            <div class="imper__btns">
+                <button data-image="rodapes.jpg">Rodapés e paredes internas <i class="fa-solid fa-paint-roller"></i></button>
+                <button data-image="fundacoes.jpg">Fundações e alicerces <i class="fa-solid fa-paint-roller"></i></button>
+                <button data-image="lajes.jpg">Lajes e telhados <i class="fa-solid fa-paint-roller"></i></button>
+                <button data-image="cozinhas.jpg">Cozinhas e banheiros <i class="fa-solid fa-paint-roller"></i></button>
+                <button data-image="piscinas.jpg">Piscinas e reservatórios <i class="fa-solid fa-paint-roller"></i></button>
+                <button data-image="paredes-externas.jpg">Paredes externas e fachada <i class="fa-solid fa-paint-roller"></i></button>
+            </div>
+        </section>
+
+        <script src="src/scripts/imper.js"></script>
+        
+    </main>
+
+    <main class="parceria">
+        <section class="parceria__container">
+            <h1>Produtos de qualidade é com a gente mesmo!</h1>
+            <img src="assets/img/fast&quartzolit.svg">
+        </section>
+    </main>
+
+    <form id="contactForm">
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="name" placeholder="Seu nome completo">
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Digite seu melhor e-mail">
+        </div>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" name="tel" placeholder="Whatsapp">
+        </div>
+        <button type="submit" id="enviarForm">Enviar</button>
+    </form>
+
+    <div class="faixa" style="background-color:var(--color--red--fast); color: var(--background--white); margin-top: 2%; font-weight: 600;">
+        <p><a href="#">Conheça também a nossa loja<i style="margin-left: 10px;" class="fa-solid fa-cart-shopping"></i></p>
+    </div>
+
+    <footer class="rodape">
+        <section class="rodape__container">
+            <div class="rodape__item">
+                <img src="assets/img/fast&quartzolit.svg">
+                <p>Especialistas em Drywall, Acústica e Steel Frame. Fast Drywall & Steel Frame é a maior rede de lojas do Brasil.</p>
+                <div>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-solid fa-shop"></i></a>
+                </div>
+            </div>
+            <div class="rodape__item">
+                <h2>Seções</h2>
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Argamassa e rejuntes</a>
+                <a href="#">Soluções</a>
+                <a href="#">Pisos vinílicos</a>
+                <a href="#">Adesivos e selantes</a>
+                <a href="#">Impermeabilizantes</a>
+            </div>
+            <div class="rodape__item">
+                <h2>Contato</h2>
+                <a href="#">E-mail</a>
+                <a href="#">Site institucional</a>
+                <a href="#">E-commerce</a>
+            </div>
+            <div class="rodape__item">
+                <h2>Parceiros</h2>
+                <a href="#">Fast Drywall & Steel Frame</a>
+                <a href="#">Placo</a>
+            </div>
+        </section>
+        <hr>
+        <div class="direitos">
+            <p>Todos os direitos reservados | &copy 2024 - Fast Drywall & Steel Frame</p>
+            <h6>Desenvolvido por <a href="#"><img src="assets/img/aleph.svg"></a></h6>
+        </div>
+    </footer>
+
+</body>
+</html>

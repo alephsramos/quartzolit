@@ -1,0 +1,112 @@
+.imper{
+    width: 100%;
+    padding: 0 10%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/img/background__imper.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.imper__produto{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.imper__produto img{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imper__produto button{
+    padding: 10px 20px;
+    border-radius: var(--border--radius);
+    background-color: var(--color--yellow--quartzolit);
+    border: 2px solid var(--color--black--quartzolit);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.imper__title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.imper__title h1{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.imper__title h1::before{
+    content: '';
+    width: 60%;
+    height: 40%;
+    right: 2%;
+    bottom: -5%;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color--yellow--quartzolit);
+}
+
+.imper__title p{
+    text-align: right;
+    width: 80%;
+}
+
+.imper__btns{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 30%;
+}
+
+.imper__btns button {
+    border: 2px solid var(--color--black--quartzolit);
+    padding: 10px;
+    width: 50%;
+    border-radius: var(--border--radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease;
+    text-align: right;
+    gap: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.imper__btns button:hover {
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
+    border: 2px solid var(--color--black--quartzolit);
+}
+
+/* Estilo para o botão ativo */
+.imper__btns button.active {
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
+    border: 2px solid var(--color--black--quartzolit);
+}

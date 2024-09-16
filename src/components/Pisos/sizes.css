@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+    .pisos__title h1{
+        font-size: 3rem;
+    }
+    .pisos__title p{
+        font-size: 0.9rem;
+    }
+    .pisos__text h2{
+        font-size: 1.6rem;
+    }
+    .pisos__text p{
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+  }
+  
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  }
+  
+@media (min-width: 1025px) {
+    .nav section ul li a{
+        font-size: 0.9rem;
+    }
+    .nav__pesquisa input::placeholder{
+        font-size: 0.85rem;
+    }
+    .nav section button{
+        font-size: 0.8rem;
+    }
+    .nav section button i{
+        font-size: 0.9rem;
+    }
+  }

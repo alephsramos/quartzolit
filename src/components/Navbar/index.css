@@ -1,0 +1,127 @@
+.nav__mobile,
+.nav__sidebar{
+    display: none;
+}
+
+.nav{
+    padding: 0 10%;
+    position: fixed;
+    z-index: 1000;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.nav section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+
+.nav section a{
+    color: var(--color--black--quartzolit);
+}
+
+.nav__logo{
+    width: 25%;
+    height: 100%;
+}
+
+.nav__logo img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.nav section ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    height: 50%;
+    align-items: center;
+}
+
+.nav section ul li a{
+    transition: all .2s;
+    position: relative;
+}
+
+.nav section ul li a:hover{
+    letter-spacing: 1px;
+}
+
+.nav section ul li a:hover::before{
+    background-color: var(--color--yellow--quartzolit);
+    width: 105%;
+    height: 50%;
+    content: '';
+    bottom: 0;
+    left: 5%;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav__pesquisa{
+    width: 25%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--color--black--quartzolit);
+    background-color: var(--background--0white);
+    border-radius: var(--border--radius);
+}
+
+.nav__pesquisa input{
+    height: 100%;
+    width: 80%;
+    border-radius: var(--border--radius);
+}
+
+.nav__pesquisa button{
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.nav__pesquisa input::placeholder{
+    padding-left: 15px;
+}
+
+.nav__pesquisa input:focus{
+    border: none;
+}
+
+.nav section > button{
+    width: 20%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    height: 55%;
+    border: 1.5px solid var(--color--black--quartzolit);
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
+    border-radius: var(--border--radius);
+    font-weight: 600;
+}
+
+.nav section button hr{
+    background-color: var(--color--black--quartzolit);
+    height: 15px;
+    width: 1.5px;
+    border-color: var(--color--black--quartzolit);
+}
+
+/* .nav section button i{
+} */
