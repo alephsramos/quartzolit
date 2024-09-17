@@ -12,9 +12,9 @@
 
 .dots button {
     width: 10px;
-    height: 10px;
+    height: 5px;
     margin: 0 7px;
-    border-radius: 50%;
+    border-radius: var(--border--radius);
     border: none;
     background-color: var(--color--black--quartzolit);
     cursor: pointer;
@@ -28,7 +28,6 @@
 
 .glider-contain{
     height: 100%;
-    border-bottom: 2px solid var(--color--black--quartzolit);
     width: 100%;
 }
 
