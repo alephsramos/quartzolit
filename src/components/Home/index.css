@@ -13,17 +13,17 @@
 .dots button {
     width: 10px;
     height: 10px;
-    margin: 0 10px;
+    margin: 0 7px;
     border-radius: 50%;
     border: none;
-    background-color: #ddd;
+    background-color: var(--color--black--quartzolit);
     cursor: pointer;
     display: inline-block;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 .dots button.active {
-    background-color: #333;
+    background-color: var(--color--yellow--quartzolit);
 }
 
 .glider-contain{
