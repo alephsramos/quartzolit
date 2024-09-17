@@ -19,7 +19,7 @@
     background-color: var(--color--black--quartzolit);
     cursor: pointer;
     display: inline-block;
-    margin-top: -20px;
+    margin-top: 15px;
 }
 
 .dots button.active {
@@ -70,7 +70,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .home__left h1{
