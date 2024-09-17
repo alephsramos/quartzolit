@@ -22,6 +22,10 @@
     margin-top: 15px;
 }
 
+.dots button:hover{
+    background-color: var(--color--purple--quartzolit);
+}
+
 .dots button.active {
     background-color: var(--color--yellow--quartzolit);
 }
