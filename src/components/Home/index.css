@@ -28,6 +28,7 @@
 
 .glider-contain{
     height: 100%;
+    border-bottom: 2px solid var(--color--black--quartzolit);
     width: 100%;
 }
 
@@ -46,7 +47,7 @@
     object-fit: contain;
     object-position: center;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
 }
 
 .home__filtro{
