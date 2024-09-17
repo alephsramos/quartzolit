@@ -160,7 +160,7 @@
     width: 100%;
     transition: all .6s ease;
     opacity: 0;
-    background-image: url('../../../assets/img/background__produtos.png');
+    background-image: url('../../../assets/img/background/background__produtos.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;

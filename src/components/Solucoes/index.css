@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    background-image: url('../../../assets/img/background__solucoes.png');
+    background-image: url('../../../assets/img/background/background__solucoes.png');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,12 +72,12 @@
 }
 
 .solucoes__item:nth-child(2){
-    background-image: url('../../../assets/img/background__solucoes2.png');
+    background-image: url('../../../assets/img/background/background__solucoes2.png');
     background-position: right;
 }
 
 .solucoes__item:nth-child(3){
-    background-image: url('../../../assets/img/background__solucoes3.png');
+    background-image: url('../../../assets/img/background/background__solucoes3.png');
     background-position: right;
 }
 
