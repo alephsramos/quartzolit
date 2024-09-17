@@ -58,4 +58,4 @@ function advanceSlide() {
 }
 
 // Avança o slide automaticamente a cada 5 segundos
-setInterval(advanceSlide, 5000);
+setInterval(advanceSlide, 3000);
