@@ -6,52 +6,56 @@ const glider = new Glider(gliderElement, {
   dots: '.dots',
 });
 
-let isDragging = false; // Variável para verificar se está arrastando
-let startX; // Posição inicial do mouse
+let isDragging = false;
+let clickPrevented = false;
+let startX, currentX;
 
-// Adiciona os eventos de mousedown, mousemove e mouseup para detectar o arrasto
+// Detecta quando o mouse é pressionado
 gliderElement.addEventListener('mousedown', (e) => {
   isDragging = false;
+  clickPrevented = false;
   startX = e.pageX;
 });
 
+// Detecta movimento para identificar arrasto
 gliderElement.addEventListener('mousemove', (e) => {
-  if (e.pageX !== startX) {
-    isDragging = true; // Se houver movimento, está arrastando
+  currentX = e.pageX;
+  if (Math.abs(currentX - startX) > 10) { // Se mover mais que 10px, considera arrasto
+    isDragging = true;
   }
 });
 
+// Finaliza o arrasto e verifica se o clique deve ser prevenido
 gliderElement.addEventListener('mouseup', () => {
-  setTimeout(() => {
-    isDragging = false; // Reseta a variável após um tempo
-  }, 50); // Pequeno delay para garantir que o clique seja tratado corretamente
+  if (isDragging) {
+    clickPrevented = true; // Define que o clique deve ser prevenido
+  }
+  isDragging = false;
 });
 
-// Adiciona um listener aos links para prevenir o clique durante o arrasto
-const links = gliderElement.querySelectorAll('a');
-links.forEach(link => {
+// Previne o clique nos links se houver arrasto
+gliderElement.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', (e) => {
-    if (isDragging) {
-      e.preventDefault(); // Previne o clique se estiver arrastando
+    if (clickPrevented) {
+      e.preventDefault(); // Previne o clique se foi arrastado
+    } else {
+      // O clique não foi prevenido, então executa a navegação
+      window.location.href = link.href;
     }
+    clickPrevented = false; // Reseta para o próximo clique
   });
 });
 
+// Função para avançar slides automaticamente (se necessário)
 function advanceSlide() {
-  // Obtém o número total de slides
-  const totalSlides = gliderElement.querySelectorAll('.glider-slide').length;
-
-  // Obtém o índice do slide atual
+  const totalSlides = gliderElement.querySelectorAll('div').length;
   const scrollPosition = gliderElement.scrollLeft;
   const slideWidth = gliderElement.clientWidth;
   const currentSlide = Math.round(scrollPosition / slideWidth);
-
-  // Calcula o próximo slide
   const nextSlide = (currentSlide + 1) % totalSlides;
 
-  // Avançar para o próximo slide
   glider.scrollItem(nextSlide, true);
 }
 
-// Intervalo de 5 segundos para avançar o slide automaticamente
-setInterval(advanceSlide, 5000); // Ajuste o tempo conforme necessário
+// Avança o slide automaticamente a cada 5 segundos
+setInterval(advanceSlide, 5000);

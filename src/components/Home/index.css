@@ -36,6 +36,12 @@
     height: 100%;
 }
 
+.glider a img {
+    width: 100%;
+    height: auto; /* Faz a imagem se ajustar ao tamanho do link */
+    display: block;
+  }
+
 .glider div img{
     object-fit: contain;
     object-position: center;
