@@ -14,7 +14,7 @@
     width: 90%;
     margin-left: 5%;
     background-color: var(--background--white);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: var(--border--radius);
 }
 
