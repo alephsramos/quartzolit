@@ -11,9 +11,9 @@
 }
 
 .dots button {
-    width: 10px;
+    width: 12px;
     height: 3px;
-    margin: 0 7px;
+    margin: 0 5px;
     border-radius: var(--border--radius);
     border: none;
     background-color: var(--color--black--quartzolit);
@@ -50,7 +50,7 @@
     object-fit: contain;
     object-position: center;
     width: 100%;
-    height: 55vh;
+    height: 55vh;   
 }
 
 .home__filtro{
@@ -120,7 +120,7 @@
     background-color: transparent;
     border-radius: var(--border--radius);
     font-weight: 500;
-    border: 1.5px solid #000;
+    border: 2px solid #000;
     cursor: pointer;
     display: flex;
     align-items: center;

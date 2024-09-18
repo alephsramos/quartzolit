@@ -21,6 +21,24 @@ html, body{
 
 }
 
+.top-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transição suave ao sumir/aparecer */
+  }
+  
+  .top-gradient.active {
+    opacity: 0.6; /* Exibe a sombra quando fizer scroll */
+  }
+  
+
 .faixa{
     background-color: var(--color--yellow--quartzolit);
     height: 5vh;
