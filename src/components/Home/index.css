@@ -12,14 +12,14 @@
 
 .dots button {
     width: 10px;
-    height: 5px;
+    height: 3px;
     margin: 0 7px;
     border-radius: var(--border--radius);
     border: none;
     background-color: var(--color--black--quartzolit);
     cursor: pointer;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .dots button:hover{

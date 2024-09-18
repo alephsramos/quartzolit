@@ -4,15 +4,18 @@
 }
 
 .nav{
-    padding: 0 10%;
+    padding: 0 5%;
+    margin-top: 0.5%;
     position: fixed;
     z-index: 1000;
     height: 12vh;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     background-color: var(--background--white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: var(--border--radius);
 }
 
 .nav section{
