@@ -35,7 +35,7 @@ html, body{
   }
   
   .top-gradient.active {
-    opacity: 0.6; /* Exibe a sombra quando fizer scroll */
+    opacity: 0.8; /* Exibe a sombra quando fizer scroll */
   }
   
 

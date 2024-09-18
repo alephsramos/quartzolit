@@ -118,6 +118,7 @@
     color: var(--color--black--quartzolit);
     border-radius: var(--border--radius);
     font-weight: 600;
+    transition: all .2s ease;
 }
 
 .nav section button hr{
