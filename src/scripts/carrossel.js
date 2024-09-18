@@ -48,11 +48,13 @@ gliderElement.querySelectorAll('a').forEach(link => {
 
 // Função para avançar slides automaticamente (se necessário)
 function advanceSlide() {
-  const totalSlides = gliderElement.querySelectorAll('div').length;
+  const totalSlides = gliderElement.querySelectorAll('.glider-slide').length;
   const scrollPosition = gliderElement.scrollLeft;
   const slideWidth = gliderElement.clientWidth;
   const currentSlide = Math.round(scrollPosition / slideWidth);
-  const nextSlide = (currentSlide + 1) % totalSlides;
+  
+  // Verifica se está no último slide e volta para o primeiro
+  const nextSlide = (currentSlide + 1 >= totalSlides) ? 0 : currentSlide + 1;
 
   glider.scrollItem(nextSlide, true);
 }
