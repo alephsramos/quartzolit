@@ -117,7 +117,7 @@
 
 .produtos__container__center p{
     color: var(--background--white);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .produtos__container__center i{
@@ -271,4 +271,13 @@
 .toggleProduct i.hidden {
   opacity: 0;
   transform: scale(0.8);
+}
+
+#loadMoreBtn{
+    background-color: var(--color--yellow--quartzolit);
+    padding: 10px 20px;
+    border-radius: var(--border--radius);
+    border: 3px solid var(--color--black--quartzolit);
+    font-weight: 600;
+    cursor: pointer;
 }

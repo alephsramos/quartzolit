@@ -99,6 +99,7 @@
     height: 45%;
     object-fit: contain;
     filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.3));
+
 }
 
 .solucoes__item p{
