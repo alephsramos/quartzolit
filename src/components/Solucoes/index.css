@@ -141,7 +141,7 @@
 
 .solucoes__item button{
     width: 80%;
-    background-color: var(--color--purple--quartzolit);
+    background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
     border-radius: var(--border--radius);
     font-weight: 600;

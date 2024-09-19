@@ -37,7 +37,7 @@
     bottom: 0;
     position: absolute;
     z-index: -1;
-    background-color: var(--color--purple--quartzolit);
+    background-color: var(--color--red--fast);
 }
 
 .pisos__title p{
@@ -77,7 +77,7 @@
     justify-content: space-evenly;
     align-items: center;
     border: 2px solid var(--color--black--quartzolit);
-    background-color: var(--color--purple--quartzolit);
+    background-color: var(--color--red--fast);
     border-radius: var(--border--radius);
     padding: 20px;
 }

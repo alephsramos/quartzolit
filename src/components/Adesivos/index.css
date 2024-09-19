@@ -38,7 +38,7 @@
     bottom: -5%;
     position: absolute;
     z-index: -1;
-    background-color: var(--color--red--fast);
+    background-color: var(--color--blue--quartzolit);
 }
 
 .adesivos__title p{
@@ -46,7 +46,7 @@
 }
 
 .adesivo__indica{
-    background-color: var(--color--red--fast);
+    background-color: var(--color--blue--quartzolit);
     border-radius: var(--border--radius);
     padding: 10px;
     width: 40%;
@@ -95,7 +95,7 @@
 }
 
 .adesivos__btns button:hover{
-    background-color: var(--color--red--fast);
+    background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
 }
 
