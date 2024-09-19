@@ -29,7 +29,7 @@
     margin-top: 20px;
 }
 
-.pisos__title h1::before{
+/* .pisos__title h1::before{
     content: '';
     width: 60%;
     height: 40%;
@@ -38,7 +38,7 @@
     position: absolute;
     z-index: -1;
     background-color: var(--color--red--fast);
-}
+} */
 
 .pisos__title p{
     width: 80%;

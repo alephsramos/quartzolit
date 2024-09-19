@@ -30,7 +30,7 @@
     margin-top: 20px;
 }
 
-.adesivos__title h1::before{
+/* .adesivos__title h1::before{
     content: '';
     width: 60%;
     height: 40%;
@@ -39,7 +39,7 @@
     position: absolute;
     z-index: -1;
     background-color: var(--color--blue--quartzolit);
-}
+} */
 
 .adesivos__title p{
     width: 80%;
@@ -75,8 +75,9 @@
 
 .adesivos__btns{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     gap: 5px;
     flex-wrap: wrap;
 }

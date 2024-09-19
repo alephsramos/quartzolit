@@ -84,7 +84,7 @@
     display: inline-block;
 }
 
-.argamassa__title h1::before{
+/* .argamassa__title h1::before{
     content: '';
     width: 60%;
     height: 25%;
@@ -93,7 +93,7 @@
     position: absolute;
     z-index: -1;
     background-color: var(--color--blue--quartzolit);
-}
+} */
 
 .argamassa__title p{
     width: 70%;

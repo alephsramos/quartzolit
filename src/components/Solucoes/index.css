@@ -28,7 +28,7 @@
     line-height: 100%;
 }
 
-.solucoes__title h1::before{
+/* .solucoes__title h1::before{
     content: '';
     width: 80%;
     height: 30%;
@@ -37,7 +37,7 @@
     position: absolute;
     z-index: -1;
     background-color: var(--color--yellow--quartzolit);
-}
+} */
 
 .solucoes__title p{
     text-align: center;

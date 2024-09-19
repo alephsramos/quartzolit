@@ -40,7 +40,7 @@
     display: inline-block;
 }
 
-.produtos__title h1 b::before{
+/* .produtos__title h1 b::before{
     content: '';
     width: 65%;
     height: 50%;
@@ -49,7 +49,7 @@
     position: absolute;
     z-index: -1;
     background-color: var(--color--red--fast);
-}
+} */
 
 .produtos__img{
     width: 30%;
