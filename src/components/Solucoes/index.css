@@ -149,5 +149,5 @@
     padding: 10px;
     display: inline-block;
     cursor: pointer;
-    border: 1px solid red;
+    border: 2px solid var(--color--black--quartzolit);
 }

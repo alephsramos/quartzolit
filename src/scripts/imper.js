@@ -11,6 +11,6 @@ imperButtons.forEach(button => {
         
         // Atualiza a imagem com base no botão clicado
         const newImage = button.getAttribute('data-image');
-        produtoImg.src = `assets/img/${newImage}`; // Substitua pelo caminho correto das imagens
+        produtoImg.src = `assets/img/banners/${newImage}`; // Substitua pelo caminho correto das imagens
     });
 });

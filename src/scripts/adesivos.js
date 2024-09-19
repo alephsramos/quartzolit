@@ -11,6 +11,6 @@ buttons.forEach(button => {
         
         // Atualiza a imagem com base no botão clicado
         const newImage = button.getAttribute('data-image');
-        image.src = `path/to/images/${newImage}`; // Substitua pelo caminho correto das imagens
+        image.src = `assets/img/banners/${newImage}`; // Substitua pelo caminho correto das imagens
     });
 });

@@ -111,16 +111,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .adesivos__imgs img{
+    height: 90%;
     width: 100%;
-    height: 80%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .adesivos__imgs button{
-    height: 10%;
     padding: 10px;
     background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
