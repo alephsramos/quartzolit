@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
-    background-image: url('../../../assets/img/background/background__argamassa.png');
-    background-position: left;
+    background-image: url('../../../assets/img/background/background-home.png');
+    background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .argamassa__left{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -25,17 +25,21 @@
     grid-template-rows: repeat(3, 1fr); /* 3 linhas */
     gap: 5px; 
     width: 100%;
-    height: 60%;
+    height: 80%;
 }
 
 .argamassa__item {
     position: relative;
     overflow: hidden;
-    transition: all .2 ease-in-out;
+    transition: all .4;
+    border-radius: var(--border--radius);
+    border: 2px solid var(--color--black--quartzolit);
 }
 
 .argamassa__item:hover{
     transform: scale(1.02);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    border-radius: var(--border--radius);
 }
 
 .argamassa__item img {
@@ -44,6 +48,7 @@
     transition: transform 0.3s ease;
     object-fit: cover;
     border-radius: var(--border--radius);
+    cursor: pointer;
 }
 
 /* Definir tamanhos específicos para alguns itens */
@@ -64,7 +69,7 @@
 }
 
 .argamassa__right{
-    width: 50%;
+    width: 45%;
     height: 80%;
     display: flex;
     align-items: flex-end;
@@ -111,18 +116,35 @@
     justify-content: flex-end;
     display: flex;
     height: 30%;
+    gap: 10px;
 }
 
 .argamassa__container img{
     width: 40%;
+    border: 2px solid var(--color--black--quartzolit);
     height: 100%;
+    border-radius: var(--border--radius);
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.argamassa__container img:hover{
+    transform: scale(1.04);
 }
 
 .argamassa__right button{
     width: 50%;
     padding: 10px;
     border-radius: var(--border--radius);
-    background-color: var(--color--blue--quartzolit);
-    color: var(--background--white);
+    border: 3px solid var(--color--black--quartzolit);
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
     font-weight: 600;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.argamassa__right button:hover{
+    width: 52%;
+    background-color: var(--background--white);
 }
