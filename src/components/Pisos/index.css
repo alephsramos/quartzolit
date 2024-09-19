@@ -45,7 +45,7 @@
 }
 
 .pisos__glider {
-    width: 95%;
+    width: 92%;
     overflow: hidden;
     border-radius: var(--border--radius);
 }
@@ -57,7 +57,7 @@
 }
 
 .pisos__glider div img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     height: 60vh;
 }
