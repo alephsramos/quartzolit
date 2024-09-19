@@ -100,7 +100,7 @@
 }
 
 .adesivos__btns button.active {
-    background-color: var(--color--red--fast);
+    background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
 }
 
@@ -122,7 +122,7 @@
 .adesivos__imgs button{
     height: 10%;
     padding: 10px;
-    background-color: var(--color--red--fast);
+    background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
     border-radius: var(--border--radius);
     border: 2px solid var(--color--black--quartzolit);
