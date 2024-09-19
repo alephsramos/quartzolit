@@ -69,22 +69,19 @@
     border: 2px solid var(--color--black--quartzolit);
     position: relative;
     z-index: 10;
-    transition: transform .2s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .solucoes__item:hover{
     transform: skew(-1deg) scale(1.05);
-    box-shadow: 5px 5px var(--color--black--quartzolit);
 }
 
 .solucoes__item:nth-child(2):hover{
-    transform: skew(0deg) scale(1.05);
-    box-shadow: 0px 0px var(--color--black--quartzolit);
+    transform: skew(0deg) scale(1.1);
 }
 
 .solucoes__item:nth-child(3):hover{
     transform: skew(1deg) scale(1.05);
-    box-shadow: -5px 5px var(--color--black--quartzolit);
 }
 
 .solucoes__item:nth-child(2){
@@ -115,8 +112,8 @@
     height: 45%;
     object-fit: contain;
     filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.3));
-
 }
+
 
 .solucoes__item p{
     text-align: justify;
@@ -160,7 +157,7 @@
     background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
     border-radius: var(--border--radius);
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px;
     border: 2px solid var(--color--black--quartzolit);
     cursor: pointer;
@@ -169,6 +166,6 @@
 
 .solucoes__item button:hover{
     background-color: var(--color--yellow--quartzolit);
-    color: var(--background--white); 
+    color: var(--color--black--quartzolit); 
     transform: scale(1.05);
 }

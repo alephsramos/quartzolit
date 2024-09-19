@@ -31,6 +31,11 @@
 .argamassa__item {
     position: relative;
     overflow: hidden;
+    transition: all .2 ease-in-out;
+}
+
+.argamassa__item:hover{
+    transform: scale(1.02);
 }
 
 .argamassa__item img {

@@ -77,6 +77,11 @@
     justify-content: space-between;
     border: 1px solid var(--color--purple--quartzolit);
     border-radius: var(--border--radius);
+    transition: transform .2s ease-in-out;
+}
+
+.produtos__container:hover{
+    transform: scale(1.02);
 }
 
 .produtos__container__left{
@@ -275,6 +280,7 @@
 
 #loadMoreBtn{
     background-color: var(--color--red--fast);
+    margin-top: 2%;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -285,4 +291,20 @@
     border: 3px solid var(--color--black--quartzolit);
     font-weight: 600;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    animation: btnQuick .4s infinite linear alternate;
+}
+
+@keyframes btnQuick{
+    0%{
+        transform: scale(1);
+    }
+    50%, 100%{
+        transform: scale(1.1);
+    }
+}
+
+#loadMoreBtn:hover{
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
 }
