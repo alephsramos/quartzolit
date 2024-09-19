@@ -58,8 +58,7 @@
 .pisos__glider div img {
     object-fit: contain;
     object-position: center;
-    height: 45vh;
-    border: 1px solid red;
+    height: 60vh;
 }
 
 .pisos__container{
@@ -92,6 +91,7 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
 }
 
 .pisos__text{
