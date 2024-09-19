@@ -224,8 +224,11 @@
 .produto__open__left button{
     padding: 15px;
     border-radius: var(--border--radius);
-    background-color: var(--color--black--quartzolit);
-    color: var(--background--white);
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--color--black--quartzolit);
+    font-weight: 600;
+    border: 3px solid var(--color--black--quartzolit);
+    cursor: pointer;
 }
 
 .glider__two{
