@@ -12,7 +12,7 @@
 }
 
 .argamassa__left{
-    width: 55%;
+    width: 65%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@
 .argamassa__title h1{
     position: relative;
     z-index: 1;
-    width: 60%;
+    width: 80%;
     text-align: right;
     display: inline-block;
 }
@@ -106,8 +106,37 @@
 } */
 
 .argamassa__title p{
-    width: 70%;
+    width: 80%;
     text-align: right;
+}
+
+.argamassa__indica{
+    background-color: var(--color--yellow--quartzolit);
+    border-radius: var(--border--radius);
+    padding: 5px;
+    height: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--color--black--quartzolit);
+}
+
+.argamassa__indica img{
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.argamassa__indica p{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--color--black--quartzolit);
 }
 
 .argamassa__container{
@@ -133,7 +162,7 @@
 }
 
 .argamassa__right button{
-    width: 50%;
+    width: 80%;
     padding: 10px;
     border-radius: var(--border--radius);
     border: 3px solid var(--color--black--quartzolit);
@@ -145,6 +174,6 @@
 }
 
 .argamassa__right button:hover{
-    width: 52%;
+    width: 82%;
     background-color: var(--background--white);
 }
