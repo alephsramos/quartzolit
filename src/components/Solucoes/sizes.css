@@ -15,10 +15,11 @@
     }
     
     .solucoes__item p{
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
     .solucoes__qualidades div p{
-        font-size: 0.7rem
+        font-size: 0.6rem;
+        font-weight: 400;
     }
     .solucoes__item button{
         font-size: 0.9rem;
