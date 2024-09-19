@@ -14,7 +14,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
 }
@@ -45,13 +45,15 @@
 }
 
 .pisos__glider {
-    width: 92%;
+    width: 90%;
+    height: 65vh;
     overflow: hidden;
     border-radius: var(--border--radius);
 }
 
 .pisos__glider .glider-slide {
     display: flex;
+    height: 100%!important;
     justify-content: center;
     align-items: center;
     border-radius: var(--border--radius);
@@ -60,7 +62,8 @@
 .pisos__glider div img {
     object-fit: contain;
     object-position: center;
-    height: 60vh;
+    border-radius: var(--border--radius);
+    height: 55vh;
 }
 
 .pisos__container{
