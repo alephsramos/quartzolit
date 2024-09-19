@@ -148,4 +148,6 @@
     font-weight: 600;
     padding: 10px;
     display: inline-block;
+    cursor: pointer;
+    border: 1px solid red;
 }
