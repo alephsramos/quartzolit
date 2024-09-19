@@ -92,7 +92,7 @@
     bottom: 0;
     position: absolute;
     z-index: -1;
-    background-color: var(--color--red--fast);
+    background-color: var(--color--green--quartzolit);
 }
 
 .argamassa__title p{
@@ -117,7 +117,7 @@
     width: 50%;
     padding: 10px;
     border-radius: var(--border--radius);
-    background-color: var(--color--red--fast);
+    background-color: var(--color--green--quartzolit);
     color: var(--background--white);
     font-weight: 600;
 }
