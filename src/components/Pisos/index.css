@@ -83,7 +83,7 @@
     border: 2px solid var(--color--red--fast);
     border-radius: var(--border--radius);
     padding: 20px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
