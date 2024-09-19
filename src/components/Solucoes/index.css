@@ -68,7 +68,23 @@
     padding: 20px;
     border: 2px solid var(--color--black--quartzolit);
     position: relative;
-    z-index: -1;
+    z-index: 10;
+    transition: transform .2s ease-in-out;
+}
+
+.solucoes__item:hover{
+    transform: skew(-1deg) scale(1.05);
+    box-shadow: 5px 5px var(--color--black--quartzolit);
+}
+
+.solucoes__item:nth-child(2):hover{
+    transform: skew(0deg) scale(1.05);
+    box-shadow: 0px 0px var(--color--black--quartzolit);
+}
+
+.solucoes__item:nth-child(3):hover{
+    transform: skew(1deg) scale(1.05);
+    box-shadow: -5px 5px var(--color--black--quartzolit);
 }
 
 .solucoes__item:nth-child(2){
@@ -147,4 +163,12 @@
     font-weight: 600;
     padding: 10px;
     border: 2px solid var(--color--black--quartzolit);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.solucoes__item button:hover{
+    background-color: var(--color--yellow--quartzolit);
+    color: var(--background--white); 
+    transform: scale(1.05);
 }
