@@ -75,18 +75,15 @@
 .imper__btns{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    height: 30%;
+    flex-wrap: wrap;
 }
 
 .imper__btns button {
     border: 2px solid var(--color--black--quartzolit);
     padding: 10px;
-    width: 50%;
     border-radius: var(--border--radius);
     cursor: pointer;
     font-weight: 600;
