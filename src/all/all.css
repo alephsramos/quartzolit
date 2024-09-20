@@ -23,13 +23,17 @@ html, body{
 
 }
 
+.nav {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave para a navbar */
+}
+
 .nav-ball {
     width: 60px;
     height: 60px;
     position: fixed;
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0); /* Começa escondida */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -38,9 +42,8 @@ html, body{
     border: 2px solid var(--color--black--quartzolit);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease; /* Transição suave para a bolinha */
+    opacity: 0; /* Começa invisível */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave para a bolinha */
 }
 
 .nav-ball img {
@@ -49,6 +52,8 @@ html, body{
     object-fit: cover;
     border-radius: 50%;
 }
+
+
 
 
 .top-gradient {
