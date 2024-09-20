@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 5%;
+    border: 1px solid red;
 }
 
 .produtos__top{
@@ -67,6 +68,7 @@
 .produtos__center{
     width: 100%;
     height: auto;
+    border: 1px solid red;
 }
 
 .produtos__container{
@@ -78,6 +80,11 @@
     border: 2px solid var(--color--black--quartzolit);
     border-radius: var(--border--radius);
     transition: transform .2s ease-in-out;
+    display: none;
+}
+
+.produtos__container.visible{
+    display: flex;
 }
 
 .produtos__container:hover{
@@ -177,7 +184,7 @@
     height: 65vh;
     padding: 30px;
     opacity: 1;
-    border: 1px solid var(--color--black--quartzolit);
+    border: 2px solid var(--color--black--quartzolit);
     border-radius: var(--border--radius);
     margin-top: 1%;
 }

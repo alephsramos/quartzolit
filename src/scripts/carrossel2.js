@@ -21,6 +21,31 @@ gliderElementsTwo.forEach(gliderElementTwo => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  const products = document.querySelectorAll('.produtos__container__left');
+  const button = document.getElementById('loadMoreBtn');
+  let visibleCount = 4;
+
+  // Função para mostrar produtos
+  const showProducts = () => {
+    products.forEach((product, index) => {
+      if (index < visibleCount) {
+        product.parentElement.classList.add('visible');
+      } else {
+        product.parentElement.classList.remove('visible');
+      }
+    });
+    button.style.display = (visibleCount >= products.length) ? 'none' : 'block';
+  };
+
+  // Inicializa a exibição dos produtos
+  showProducts();
+
+  // Evento para o botão "Ver mais"
+  button.addEventListener('click', () => {
+    visibleCount += 4; // Adiciona 4 produtos a cada clique
+    showProducts();
+  });
+
   document.querySelectorAll('.toggleProduct').forEach(button => {
     button.addEventListener('click', function () {
       const container = this.closest('.produtos__container');
