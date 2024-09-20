@@ -78,11 +78,9 @@
     border: 2px solid var(--color--black--quartzolit);
     border-radius: var(--border--radius);
     transition: transform .2s ease-in-out;
+    display: none;
 }
 
-.produtos__container.hidden {
-    display: none; /* Oculta o produto sem ocupar espaço */
-}
 
 @keyframes scaleIn {
     0% {
