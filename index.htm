@@ -78,7 +78,7 @@
             </ul>
             <div class="nav__pesquisa">
                 <input type="search" name="search" placeholder="Pesquisar" id="search">
-                <button id="serchButton"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                <button id="searchButton"> <i class="fa-solid fa-magnifying-glass"></i> </button>
             </div>
             <button id="navButton">
                 Fazer orçamento agora
@@ -87,6 +87,11 @@
             </button>
         </section>
     </nav>
+
+    <div id="alertModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border-radius:10px; z-index:1000; box-shadow:0 0 15px rgba(0,0,0,0.5);">
+        <p id="alertMessage">Nenhum resultado encontrado.</p>
+        <button id="closeAlert">Fechar</button>
+    </div>
 
     <nav class="nav__mobile" id="navMobile"> 
         <a href="#"> <img src="assets/img/logomarca/fast&quartzolit.svg" alt="logo da fast com a quartzolit"> </a>
@@ -178,7 +183,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="produtos">
+    <main class="produtos" id="produtos">
         <section class="produtos__top">
             <div class="produtos__title">
                 <h1 class="animate animate-left">Entenda tudo sobre<b>cada produto nosso!</b></h1>
@@ -1276,7 +1281,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
     
-    <main class="rank">
+    <main class="rank" id="filtro">
         <section class="rank__left">
             <div class="rank__grid">
                 <div class="rank__item rank__item1 animate animate-fade-in"><img src="assets/img/banners/RENOVA-FACIL.jpg" alt="produto 1"></div>
@@ -1310,7 +1315,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="fachadas">
+    <main class="fachadas" id="fachadas">
         <section class="fachadas__title">
             <h1 class="animate animate-left">Fachadas</h1>
             <p class="animate animate-left">A quartzolit possui agora uma nova linha de Adesivos e Selantes, categorizada por soluções de serviços rápidos para selar, vedar e fixar, ao estilo “Faça Você Mesmo”.</p>
@@ -1339,7 +1344,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="imper">
+    <main class="imper" id="impermeabilizante">
         <section class="imper__produto">
             <img class="animate animate-left" src="assets/img/banners/tecplus-lastic-7000-quartzolit.jpg" alt="produto selecionado" id="produto-img-imper">
             <button class="animate animate-fade-in">Fazer orçamento agora!</button>
@@ -1363,7 +1368,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="argamassa">
+    <main class="argamassa" id="argamassas">
         <section class="argamassa__title">
             <h1 class="animate animate-left">Argamassa e Rejuntes</h1>
             <p class="animate animate-left">Saiba quais são as melhores soluções para pisos e qual vai se encaixar melhor na sua obra.</p>
@@ -1435,7 +1440,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="pisos">
+    <main class="pisos" id="pisos">
 
         <section class="pisos__container">
             <div class="pisos__item animate animate-left">
@@ -1508,7 +1513,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="adesivos">
+    <main class="adesivos" id="adesivos">
         <section class="adesivos__title">
             <h1 class="animate animate-left">Adesivos e Selantes</h1>
             <p class="animate animate-left">A quartzolit possui agora uma nova linha de Adesivos e Selantes, categorizada por soluções de serviços rápidos para selar, vedar e fixar, ao estilo “Faça Você Mesmo”.</p>
@@ -1537,7 +1542,7 @@
         <p><a href="#">Conheça também a nossa loja<i style="margin-left: 10px;" class="fa-solid fa-cart-shopping"></i></p>
     </div>
 
-    <main class="solucoes">
+    <main class="solucoes" id="solucoes">
         <section class="solucoes__title">
             <h1 class="animate animate-up">Conheça as soluções para os seus problemas</h1>
             <p class="animate animate-up">Aqui temos tudo para garantir que você resolva seus problemas, com a melhor qualidade do mercado!</p>
@@ -1612,7 +1617,7 @@
         <p><a href="#">Fast Drywall</a> - Distribuidora autorizada pela <a href="#">Quartzolit</a> <i class="fa-solid fa-check"></i></p>
     </div>
 
-    <main class="casados">
+    <main class="casados" id="casados">
 
     </main>
 

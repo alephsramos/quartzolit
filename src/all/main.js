@@ -54,3 +54,48 @@ window.addEventListener('scroll', function() {
     }, 3000); // Ajuste o tempo que deseja para a navbar voltar após parar a rolagem
 });
 
+
+
+
+
+ // Mapeamento de expressões regulares para âncoras
+ const searchMap = [
+  { regex: /\b(rejuntes?|argamassas?|argamassa)\b/i, anchor: "argamassas" }, // Palavra-chave argamassa
+  { regex: /\b(soluções|opções)\b/i, anchor: "solucoes" }, // Palavra-chave soluções
+  { regex: /\b(contato|fale conosco)\b/i, anchor: "contato" }, // Palavra-chave contato
+];
+
+// Função para normalizar strings, removendo acentos e caracteres especiais
+function normalizeString(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+// Função que exibe o alerta no centro da tela
+function showAlert(message) {
+  const alertModal = document.getElementById("alertModal");
+  document.getElementById("alertMessage").textContent = message;
+  alertModal.style.display = "block";
+}
+
+// Função para esconder o alerta
+document.getElementById("closeAlert").addEventListener("click", function() {
+  document.getElementById("alertModal").style.display = "none";
+});
+
+// Função de busca por âncora
+document.getElementById("searchButton").addEventListener("click", function(event) {
+  event.preventDefault(); // Evita comportamento padrão
+  const searchTerm = normalizeString(document.getElementById("search").value.trim());
+
+  // Verifica se o termo pesquisado corresponde a uma expressão regular definida
+  const match = searchMap.find(entry => entry.regex.test(searchTerm));
+
+  if (match) {
+      const anchorElement = document.getElementById(match.anchor);
+      if (anchorElement) {
+          anchorElement.scrollIntoView({ behavior: "smooth" });
+      }
+  } else {
+      showAlert("Nenhum resultado encontrado para: " + searchTerm);
+  }
+});
