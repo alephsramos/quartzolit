@@ -1,3 +1,4 @@
+// Função original para controlar o Glider
 const gliderElementsTwo = document.querySelectorAll('.glider__two');
 gliderElementsTwo.forEach(gliderElementTwo => {
   const gliderTwo = new Glider(gliderElementTwo, {
@@ -20,32 +21,34 @@ gliderElementsTwo.forEach(gliderElementTwo => {
   setInterval(advanceSlideTwo, 2000);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const products = document.querySelectorAll('.produtos__container__left');
-  const button = document.getElementById('loadMoreBtn');
-  let visibleCount = 4;
+document.addEventListener('DOMContentLoaded', function() {
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  const products = document.querySelectorAll('.produtos__center');
+  let productsToShow = 4; // Número de produtos visíveis no início
+  let currentIndex = 0;
 
-  // Função para mostrar produtos
-  const showProducts = () => {
-    products.forEach((product, index) => {
-      if (index < visibleCount) {
-        product.parentElement.classList.add('visible');
-      } else {
-        product.parentElement.classList.remove('visible');
+  // Função para mostrar os produtos
+  function showProducts() {
+      for (let i = currentIndex; i < currentIndex + productsToShow && i < products.length; i++) {
+          products[i].classList.add('visible');
       }
-    });
-    button.style.display = (visibleCount >= products.length) ? 'none' : 'block';
-  };
+      currentIndex += productsToShow;
 
-  // Inicializa a exibição dos produtos
+      // Se todos os produtos estiverem visíveis, ocultar o botão
+      if (currentIndex >= products.length) {
+          loadMoreBtn.style.display = 'none';
+      }
+  }
+
+  // Mostrar os primeiros produtos ao carregar a página
   showProducts();
 
-  // Evento para o botão "Ver mais"
-  button.addEventListener('click', () => {
-    visibleCount += 4; // Adiciona 4 produtos a cada clique
-    showProducts();
-  });
+  // Adicionar evento ao botão para carregar mais produtos
+  loadMoreBtn.addEventListener('click', showProducts);
+});
 
+
+  // Função para alternar a exibição dos detalhes dos produtos
   document.querySelectorAll('.toggleProduct').forEach(button => {
     button.addEventListener('click', function () {
       const container = this.closest('.produtos__container');
@@ -82,5 +85,3 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 100); // Tempo igual ao da transição CSS
     });
   });
-});
-

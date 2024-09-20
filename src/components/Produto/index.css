@@ -64,21 +64,37 @@
     object-fit: contain;
 }
 
-.produtos__center{
-    width: 100%;
-    height: auto;
+.produtos__center {
+    width: 100%; /* Garante que cada produto ocupe 100% da largura */
+    height: auto; /* Deixe a altura ser automática */
+    display: none; /* Inicialmente, todos os produtos estão ocultos */
 }
 
-.produtos__container{
-    width: 100%;
-    height: 20vh;
+.produtos__center.visible {
+    display: flex; /* Tornar visíveis apenas os produtos desejados */
+    flex-direction: column; /* Para que os elementos internos possam se alinhar verticalmente */
+}
+
+.produtos__container {
+    width: 100%; /* Garante que o container do produto ocupe 100% da largura */
+    height: 18vh; /* Altura ajustada */
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid var(--color--black--quartzolit);
     border-radius: var(--border--radius);
-    transition: transform .2s ease-in-out;
-    display: none;
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box; /* Garante que o padding e borda sejam inclusos na largura */
+}
+
+.produtos__container img {
+    max-width: 100%; /* Garante que as imagens respeitem o limite do container */
+    height: auto;
+}
+
+.produtos__name h2, 
+.produtos__name p {
+    margin: 0;
 }
 
 
@@ -91,11 +107,6 @@
         transform: scale(1);
         opacity: 1;
     }
-}
-
-.produtos__container.visible {
-    display: flex; /* Mostra os produtos visíveis */
-    animation: scaleIn 0.3s ease-out; /* Animação de escala */
 }
 
 .produtos__container:hover{
@@ -280,7 +291,8 @@
 
 #loadMoreBtn{
     background-color: var(--color--red--fast);
-    margin-top: -2%;
+    margin: 2%;
+    z-index: 2;
     width: 40px;
     height: 40px;
     border-radius: 50%;
