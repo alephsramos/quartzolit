@@ -13,7 +13,10 @@
     .argamassa__title p{
         font-size: 0.9rem;
     }
-    .argamassa__right button{
+    .argamassa__text h2{
+        font-size: 1.6rem;
+    }
+    .argamassa__text p{
         font-size: 0.9rem;
     }
 }
