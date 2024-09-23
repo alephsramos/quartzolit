@@ -1,0 +1,126 @@
+.etapas{
+    padding: 5% 10%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.etapas__title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.etapas__title h1{
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    display: inline-block;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.etapas__title p{
+    width: 50%; 
+}
+
+.etapas__container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.etapas__item{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border--radius);
+    border: 2px solid var(--color--black--quartzolit);
+    background-image: url('../../../assets/img/background/background__etapas-2.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in-out;
+}
+
+.etapas__item:hover{
+    transform: scale(1.02);
+}
+
+.etapas__item:nth-child(2),
+.etapas__item:nth-child(4),
+.etapas__item:nth-child(6){
+    background-image: url('../../../assets/img/background/background__etapas-1.jpg');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.etapas__text{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+.etapas__text div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.etapas__text img:nth-child(2){
+    border-radius: 0 var(--border--radius) var(--border--radius) 0;
+}
+
+.etapas__text:nth-child(2),
+.etapas__text:nth-child(4){
+    text-align: right;
+}
+
+/* .etapas__text h2{
+    height: 20%;
+}
+
+.etapas__text p{
+    height: 60%;
+} */
+
+.etapas__text img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
+    border-radius: var(--border--radius) 0 0 var(--border--radius);
+}
+
+.etapas__produto{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.etapas__produto img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+}
