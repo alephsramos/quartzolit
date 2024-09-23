@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.produto__open').forEach(openSection => {
         if (openSection !== productOpen && openSection.classList.contains('open')) {
           openSection.classList.remove('open');
-          const otherButton = openSection.previousElementSibling.querySelector('.toggleProduct');
+          const otherButton = openSection.previousElementSibling.querySelectorAll('.toggleProduct');
           if (otherButton) {
             otherButton.querySelector('span').textContent = 'Ver mais';
             otherButton.querySelector('i').className = 'fa-solid fa-plus';
