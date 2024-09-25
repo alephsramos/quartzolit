@@ -1,0 +1,93 @@
+@media (max-width: 768px) {
+    .argamassa{
+        height: 100dvh;
+        margin-top: 5%;
+        padding: 0 10%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 80px;
+    }
+    
+    .argamassa__title{
+        width: 100%;
+        height: 20%;
+        gap: 30px;
+    }
+    
+    .argamassa__title h1{
+        width: 100%;
+        line-height: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .argamassa__title p{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .argamassa__glider {
+        width: 100%;
+        display: none;
+        height: 60vh;
+        border: 1px solid red;
+    }
+    
+    .argamassa__glider .glider-slide {
+        height: 100%!important;
+        display: none;
+    }
+
+    .argamassa__container{
+        width: 100%!important;
+        justify-content: center;
+        height: 60%;
+        gap: 10px;
+    }
+    
+    .argamassa__item{
+        height: 60%;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .argamassa__img{
+        width: 30%;
+        height: 100%;
+    }
+    
+    .argamassa__img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .argamassa__text{
+        height: 100%;
+        width: 60%;
+        gap: 20px;
+    }
+
+    .argamassa__btn{
+        height: 100%;
+        width: 25%;
+        display: none;
+    }
+    
+    .argamassa__btn button{
+        padding: 10px 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+}
