@@ -1,5 +1,16 @@
 @media (max-width: 768px) {
-
+    .rodape__item p{
+        font-size: 0.9rem;
+    }
+    .rodape__item h2{
+        font-size: 1.2rem;
+    }
+    .direitos p{
+        font-size: 0.6rem;
+    }
+    .direitos h6{
+        font-size: 0.6rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

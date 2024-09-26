@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .rodape{
+        width: 100%;
+        padding: 0 5%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .rodape__container{
+        margin-top: 3%;
+        height: 80%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .rodape__item{
+        width: 100%;
+        height: 100%;
+        gap: 5px;
+    }
+    
+    .rodape__item p{
+        width: 80%;
+    } 
+
+    .rodape hr{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .direitos h6{
+        gap: 5px;
+        width: 60%;
+    }
+    
+    .direitos h6 img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+}
