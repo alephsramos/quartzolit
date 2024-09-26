@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    #contactForm{
+        height: 48vh;
+        gap: 20px;
+    }
+    
+    #contactForm div {
+        width: 90%;
+        gap: 10px;
+    }
+    
+    #contactForm div i {
+        height: 40px;
+        width: 40px;
+    }
+    
+    #contactForm input {
+        width: 85%;
+        padding: 10px;
+    }
+    
+    #contactForm input:focus {
+        width: 90%;
+    }
+    
+    #contactForm button{
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}
