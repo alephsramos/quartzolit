@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
-
+    .parceria__container h1{
+        font-size: 1.4rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
