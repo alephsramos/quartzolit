@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     .rank{
-        height: 100dvh;
+        height: auto;
         width: 100%;
-        padding: 0 5%;
+        padding: 10% 5%;
         flex-direction: column-reverse;
         gap: 60px;
     }
