@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
-
+    .imper__title h1{
+        font-size: 2.2rem;
+    }
+    .imper__title p{
+        font-size: 0.9rem;
+    }
+    .imper__btns button {
+        font-size: 0.7rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

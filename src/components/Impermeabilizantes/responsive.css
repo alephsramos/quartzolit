@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    .imper{
+        width: 100%;
+        padding: 0 10%;
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    
+    .imper__produto{
+        width: 100%;
+        height: 20%;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .imper__produto img{
+        height: 90%;
+        width: 100%;
+    }
+    
+    .imper__produto button{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .imper__title{
+        width: 100%;
+        height: 30%;
+        gap: 30px;
+    }
+    
+    .imper__title h1{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .imper__title p{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .imper__btns{
+        width: 100%;
+        gap: 5px;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .imper__btns button {
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}
