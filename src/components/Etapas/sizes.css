@@ -1,5 +1,16 @@
 @media (max-width: 768px) {
-
+    .etapas__title h1{
+        font-size: 1.6rem;
+    }
+    .etapas__title p{
+        font-size: 0.9rem;
+    }
+    .etapas__text h2{
+        font-size: 1rem;
+    }
+    .etapas__text p{
+        font-size: 0.7rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

@@ -51,7 +51,7 @@ window.addEventListener('scroll', function() {
         navbar.style.pointerEvents = 'auto'; // Habilita cliques novamente
         navBall.style.transform = 'translateX(-50%) scale(0)'; // Esconde a bolinha
         navBall.style.opacity = '0'; // Fica invisível
-    }, 3000); // Ajuste o tempo que deseja para a navbar voltar após parar a rolagem
+    }, 1000); // Ajuste o tempo que deseja para a navbar voltar após parar a rolagem
 });
 
 

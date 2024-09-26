@@ -1,5 +1,16 @@
 @media (max-width: 768px) {
-
+    .argamassa__title h1{
+        font-size: 3rem;
+    }
+    .argamassa__title p{
+        font-size: 0.9rem;
+    }
+    .argamassa__text h2{
+        font-size: 1.3rem;
+    }
+    .argamassa__text p{
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+    .etapas{
+        padding: 5% 10%;
+        height: auto;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .etapas__title{
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .etapas__title h1{
+        width: 100%;
+        line-height: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .etapas__title p{
+        width: 100%; 
+        text-align: justify;
+    }
+    
+    .etapas__container{
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .etapas__item{
+        width: 100%;
+        height: 20vh;
+        overflow-y: hidden;
+    
+    }
+    
+    .etapas__item:nth-child(2),
+    .etapas__item:nth-child(4),
+    .etapas__item:nth-child(6){
+        background-image: url('../../../assets/img/background/background__etapas-1.jpg');
+    }
+    
+    .etapas__text{
+        gap: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .etapas__text div{
+        gap: 10px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .etapas__text:nth-child(2),
+    .etapas__text:nth-child(4){
+        text-align: right;
+    }
+    
+    .etapas__text img{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .etapas__produto{
+        height: 100%;
+        width: 20%;
+        display: none;
+    }
+    
+    .etapas__produto img{
+        width: 80%;
+        height: 80%;
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}

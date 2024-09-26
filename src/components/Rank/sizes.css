@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
-
+    .rank__title h1{
+        font-size: 3rem;
+    }
+    .rank__title p{
+        font-size: 0.9rem;
+    }
+    .rank__right button{
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
