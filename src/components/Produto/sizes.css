@@ -7,6 +7,12 @@
         font-size: 1rem;
         width: 100%;
     }
+    .produtos__name h2{
+        font-size: 1rem;
+    }
+    .produtos__name p{
+        font-size: 0.7rem;
+    }
     .produtos__container button{
         font-size: 0.9rem;
     }

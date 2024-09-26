@@ -44,7 +44,6 @@
     .produtos__container {
         width: 100%; 
         height: 18vh; 
-        border: 1px solid red;
     }
     
     .produtos__container img {
@@ -55,13 +54,11 @@
     .produtos__container__left{
         width: 80%;
         height: 100%;
-        border: 1px solid red;
     }
     
     .produtos__container__left img{
         width: 40%;
         height: 80%;
-        border: 1px solid red;
     }
     
     .produtos__name{
@@ -102,13 +99,14 @@
     }
     
     .produto__open__left{
-        width: 50%;
+        width: 100%;
         height: 100%;
         gap: 40px;
+        overflow: scroll;
     }
 
     .produto__open__left__hashtags{
-        width: 80%;
+        width: 100%;
         gap: 5px;
     }
     
@@ -119,11 +117,13 @@
     
     .produto__open__left button{
         padding: 15px;
+        width: 100%;
     }
     
     .produto__img{
         width: 50%;
         height: 100%;
+        display: none;
     }
     
     .produto__img img{
