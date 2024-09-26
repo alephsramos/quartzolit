@@ -94,25 +94,24 @@
     </div>
 
     <nav class="nav__mobile" id="navMobile"> 
-        <a href="#"> <img src="assets/img/logomarca/fast&quartzolit.svg" alt="logo da fast com a quartzolit"> </a>
-        <div>
-            <div class="nav__pesquisa">
-                <input type="search" name="search" placeholder="Pesquisar" id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <button id="openSidebar">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
+        <a href="#">
+            <img src="assets/img/logomarca/fast&quartzolit.svg" alt="logo da fast com a quartzolit">
+        </a>
+        <button id="openSidebar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
-
+    
     <section class="nav__sidebar" id="navSidebar">
+        <div class="nav__pesquisa">
+            <input type="search" name="search" placeholder="Pesquisar" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <ul>
-            <li><a href="#">Direção 1</a></li>
-            <li><a href="#">Direção 2</a></li>
-            <li><a href="#">Direção 3</a></li>
-            <li><a href="#">Direção 4</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#solucoes">Problemas</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#form">Contato</a></li>
         </ul>
         <button id="navButton">
             Fazer orçamento agora
@@ -120,6 +119,26 @@
             <i class="fa-solid fa-circle-check"></i>
         </button>
     </section>
+    
+
+    <script>
+// Selecionar elementos
+const openSidebarButton = document.getElementById('openSidebar');
+const navSidebar = document.getElementById('navSidebar');
+
+// Adicionar evento para abrir a sidebar
+openSidebarButton.addEventListener('click', (event) => {
+    navSidebar.classList.toggle('open');
+    event.stopPropagation(); // Impedir que o clique no botão feche imediatamente a sidebar
+});
+
+// Evento para fechar a sidebar ao clicar fora dela
+document.addEventListener('click', (event) => {
+    if (!navSidebar.contains(event.target) && event.target !== openSidebarButton) {
+        navSidebar.classList.remove('open');
+    }
+});
+    </script>
 
     <main class="home">
         <div class="glider-contain">
