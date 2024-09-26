@@ -118,6 +118,23 @@ html, body{
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    .faixa{
+        height: 5vh;
+        margin-top: 0vh;
+    }
+    .faixa p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+}
+
 ::-webkit-scrollbar{
     width: 5px;
     background-color: transparent;
