@@ -20,8 +20,8 @@
 }
 
 html, body{
-
-}
+    scroll-behavior: smooth;
+}   
 
 .nav {
     transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave para a navbar */
