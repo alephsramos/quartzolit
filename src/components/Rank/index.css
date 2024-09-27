@@ -150,9 +150,10 @@
 }
 
 .rank__container img{
-    width: 40%;
     border: 2px solid var(--color--black--quartzolit);
     height: 100%;
+    object-fit: contain;
+    object-position: center;
     border-radius: var(--border--radius);
     cursor: pointer;
     transition: transform .2s ease-in-out;
