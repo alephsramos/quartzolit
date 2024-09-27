@@ -16,5 +16,9 @@
 }
 
 @media (min-width: 1025px) {
-
+    .nav__mobile,
+    .nav__sidebar{
+        display: none;
+        opacity: 0;
+    }
 }
