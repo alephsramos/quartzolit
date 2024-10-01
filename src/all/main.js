@@ -1,22 +1,9 @@
 let timeout;
 
-window.addEventListener('scroll', () => {
-  const gradient = document.querySelector('.top-gradient');
-  
-  // Aplica a classe 'active' para mostrar a sombra
-  gradient.classList.add('active');
+// Função para verificar se está em dispositivos móveis
+const isMobile = () => window.innerWidth <= 768;
 
-  // Limpa o timeout anterior (se houver)
-  clearTimeout(timeout);
-
-  // Define um novo timeout de 1 segundo para remover a classe 'active'
-  timeout = setTimeout(() => {
-    gradient.classList.remove('active');
-  }, 200); // 1000 ms = 1 segundo
-});
-
-
-
+const gradient = document.querySelector('.top-gradient');
 const navbar = document.querySelector('.nav');
 const navBall = document.createElement('div'); // Cria a bolinha
 const navBallImg = document.createElement('img'); // Cria a imagem dentro da bolinha
@@ -33,7 +20,20 @@ navBall.style.opacity = '0';
 navbar.style.transform = 'scale(1)';
 navbar.style.opacity = '1';
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
+  // Verifica se não está em um dispositivo móvel
+  if (!isMobile()) {
+    // Aplica a classe 'active' para mostrar a sombra
+    gradient.classList.add('active');
+
+    // Limpa o timeout anterior (se houver)
+    clearTimeout(timeout);
+
+    // Define um novo timeout de 200 ms para remover a classe 'active'
+    timeout = setTimeout(() => {
+      gradient.classList.remove('active');
+    }, 200); // 200 ms
+
     // Quando rolar, faz a transição suave para esconder a navbar e mostrar a bolinha
     navbar.style.transform = 'scale(0)'; // Esconde a navbar
     navbar.style.opacity = '0'; // Fica invisível
@@ -45,15 +45,15 @@ window.addEventListener('scroll', function() {
     clearTimeout(timeout);
 
     // Configura um timeout para mostrar a navbar novamente após parar de rolar
-    timeout = setTimeout(function() {
-        navbar.style.transform = 'scale(1)'; // Mostra a navbar novamente
-        navbar.style.opacity = '1'; // Fica visível
-        navbar.style.pointerEvents = 'auto'; // Habilita cliques novamente
-        navBall.style.transform = 'translateX(-50%) scale(0)'; // Esconde a bolinha
-        navBall.style.opacity = '0'; // Fica invisível
+    timeout = setTimeout(() => {
+      navbar.style.transform = 'scale(1)'; // Mostra a navbar novamente
+      navbar.style.opacity = '1'; // Fica visível
+      navbar.style.pointerEvents = 'auto'; // Habilita cliques novamente
+      navBall.style.transform = 'translateX(-50%) scale(0)'; // Esconde a bolinha
+      navBall.style.opacity = '0'; // Fica invisível
     }, 1000); // Ajuste o tempo que deseja para a navbar voltar após parar a rolagem
+  }
 });
-
 
 
 
