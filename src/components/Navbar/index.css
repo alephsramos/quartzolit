@@ -156,7 +156,8 @@
 
 .nav__mobile a img {
     height: 100%; /* Ajuste conforme necessário */
-    width: 50%;
+    width: 80%;
+    object-fit: cover;
 }
 
 .nav__mobile button {
