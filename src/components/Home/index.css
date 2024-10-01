@@ -4,6 +4,14 @@
     padding-top: 12vh;
 }
 
+.desktop-carousel {
+    display: block;
+  }
+  
+  .mobile-carousel {
+    display: none;
+  }
+
 .dots {
     text-align: center;
     position: relative;

@@ -2,9 +2,17 @@
     .home{
         width: 100%;
         height: 65vh;
-        padding-top: 12vh;
+        padding-top: 0vh;
     }
-/*     
+
+    .desktop-carousel {
+        display: none;
+      }
+    
+      .mobile-carousel {
+        display: block;
+      }
+  
     .dots {
         text-align: center;
         position: relative;
@@ -46,11 +54,11 @@
       }
     
     .glider div img{
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 55vh;   
-    } */
+        height: 65vh;   
+    } 
     
     .home__filtro{
         width: 100%;
