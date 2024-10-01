@@ -59,6 +59,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2BPC3G');</script>
+    <!-- End Google Tag Manager -->
+
     <title>Fast & Quartzolit</title>
 </head>
 <body>
@@ -1818,17 +1826,86 @@ document.addEventListener('click', (event) => {
     <form id="contactForm">
         <div>
             <i class="fa-solid fa-user animate animate-fade-in"></i>
-            <input class="animate animate-up" type="text" name="name" placeholder="Seu nome completo">
+            <input class="animate animate-up" required type="text" name="name" id="name" placeholder="Seu nome completo">
         </div>
         <div>
-            <i class="fa-solid fa-envelope animate animate-fade-in"></i>
-            <input class="animate animate-up" type="email" name="email" placeholder="Digite seu melhor e-mail">
+            <i class="fa-solid fa-envelope animate animate-fade-in"></i> 
+            <input class="animate animate-up" required type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
         </div>
         <div>
             <i class="fa-solid fa-phone animate animate-fade-in"></i>
-            <input class="animate animate-up" type="tel" name="tel" placeholder="Whatsapp">
+            <input class="animate animate-up" required type="tel" name="tel" id="tel" placeholder="Whatsapp">
         </div>
-        <button type="submit" id="enviarForm" class="animate animate-fade-in">Enviar</button>
+        <button type="submit" id="submitButton" class="animate animate-fade-in">Enviar</button>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const formElement = document.getElementById('contactForm');
+
+    formElement.addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        // Captura os valores dos campos do formulário
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const tel = document.getElementById('tel').value;
+
+        // Gera um identificador único para cada submissão
+        const uniqueId = generateUniqueId();
+
+        const payload = {
+            "rules": {
+                "update": "false",
+                "filter_status_update": "open",
+                "equal_pipeline": "true",
+                "status": "open",
+                "validate_cpf": "false"
+            },
+            leads: [{
+                id: "WebSite_Fast_Quartzolit",
+                user: name,
+                email: email,
+                name: name,
+                personal_phone: tel,
+                mobile_phone: tel,
+                last_conversion: {
+                    source: "site_fast_quartzolit"
+                },
+            }]
+        };
+
+        // Envia a requisição para o endpoint do PipeRun
+        fetch('https://app.pipe.run/webservice/integradorJson?hash=1e28b707-3c02-4393-bb9d-d3826b060dcd', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+
+            alert('Formulário enviado com sucesso!');
+
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Houve um erro ao enviar o formulário.');
+        });
+    });
+
+    function generateUniqueId() {
+        return new Date().getTime().toString();
+    }
+});
+
+
+
+</script>
+
     </form>
 
     <div class="faixa animate animate-fade-in" style="background-color:var(--color--red--fast); color: var(--background--white); margin-top: 2%; font-weight: 600;">
@@ -1875,6 +1952,11 @@ document.addEventListener('click', (event) => {
             <h6>Desenvolvido por <a href="#"><img src="assets/img/logomarca/aleph.svg"></a></h6>
         </div>
     </footer>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2BPC3G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <script defer src="src/scripts/animate.js"></script>
     <script src="src/all/main.js"></script>
