@@ -1543,18 +1543,33 @@ document.addEventListener('click', (event) => {
                 <p>Fast Drywall indica esse produto!</p>
             </div>
 
-            <div class="adesivos__btns">
+            <div class="adesivos__btns2">
                 <button class="animate animate-fade-in" data-image="silicone-acético-quartzolit.jpg">Silicones <i class="fa-solid fa-trowel"></i></button>
                 <button class="animate animate-fade-in" data-image="fixtudo-branco-quartzolit.jpg">Adesivo <i class="fa-solid fa-trowel"></i></button>
                 <button class="animate animate-fade-in" data-image="tecbond-tix-quartzolit.jpg">Adesivos especiais <i class="fa-solid fa-trowel"></i></button>
             </div>
         </section>
         <section class="adesivos__imgs">
-            <img class="animate animate-fade-in" src="assets/img/banners/silicone-acético-quartzolit.jpg" alt="produto selecionado" id="produto-img">
+            <img class="animate animate-fade-in" src="assets/img/banners/silicone-acético-quartzolit.jpg" alt="produto selecionado" id="produto-img2">
             <button class="animate animate-up"  onclick="window.location.href='#form'">Fazer meu orçamento agora!</button>
         </section>
 
-        <script src="src/scripts/adesivos.js"></script>
+        <script>
+            const buttonsTwo = document.querySelectorAll('.adesivos__btns2 button');
+            const imageTwo = document.getElementById('produto-img2');
+
+            buttonsTwo.forEach(button => {
+            button.addEventListener('click', function() {
+       
+            buttonsTwo.forEach(btn => btn.classList.remove('active'));
+        
+            this.classList.add('active');
+        
+            const newImage = this.getAttribute('data-image');
+            imageTwo.src = `assets/img/banners/${newImage}`;
+            });
+            });
+        </script>
 
     </main>
 

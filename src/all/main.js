@@ -58,12 +58,49 @@ window.addEventListener('scroll', function() {
 
 
 
- // Mapeamento de expressões regulares para âncoras
+
  const searchMap = [
-  { regex: /\b(rejuntes?|argamassas?|argamassa)\b/i, anchor: "argamassas" }, // Palavra-chave argamassa
-  { regex: /\b(soluções|opções)\b/i, anchor: "solucoes" }, // Palavra-chave soluções
-  { regex: /\b(contato|fale conosco)\b/i, anchor: "contato" }, // Palavra-chave contato
+  { 
+    regex: /\b(rejunte|rejuntes?|argamassa|argamassas?|cimento cola|cimento-cola|massa de assentamento|massa para rejunte|mortalha)\b/i, 
+    anchor: "argamassas" 
+  }, // Palavra-chave: Argamassas
+  
+  { 
+    regex: /\b(solução|soluções?|opção|opções?|alternativa|alternativas|escolha|escolhas|possibilidade|possibilidades)\b/i, 
+    anchor: "solucoes" 
+  }, // Palavra-chave: Soluções
+  
+  { 
+    regex: /\b(contato|fale conosco|faleconosco|suporte|atendimento|falar com a gente|entrar em contato|suporte técnico|assistência)\b/i, 
+    anchor: "contato" 
+  }, // Palavra-chave: Contato
+  
+  { 
+    regex: /\b(impermeabilizante|impermeabilizantes?|hidrofugante|hidrofugantes|protetor de superfícies|selador de superfície|protetores de superfícies)\b/i, 
+    anchor: "impermeabilizantes" 
+  }, // Palavra-chave: Impermeabilizantes
+  
+  { 
+    regex: /\b(adesivo|adesivos?|cola|colas|adesivo de construção|adesivo estrutural|adesivo epóxi)\b/i, 
+    anchor: "adesivos" 
+  }, // Palavra-chave: Adesivos
+  
+  { 
+    regex: /\b(selante|selantes?|silicone|selador|massa selante|vedante|massa de vedação)\b/i, 
+    anchor: "selantes" 
+  }, // Palavra-chave: Selantes
+  
+  { 
+    regex: /\b(produto|produtos?|material|materiais|insumos|mercadoria|mercadorias|itens)\b/i, 
+    anchor: "produtos" 
+  }, // Palavra-chave: Produtos
+  
+  { 
+    regex: /\b(fachada|fachadas?|revestimento de fachada|revestimentos de fachada|parede externa|paredes externas|acabamento externo|acabamentos externos)\b/i, 
+    anchor: "fachadas" 
+  }, // Palavra-chave: Fachadas
 ];
+
 
 // Função para normalizar strings, removendo acentos e caracteres especiais
 function normalizeString(str) {
@@ -83,8 +120,7 @@ document.getElementById("closeAlert").addEventListener("click", function() {
 });
 
 // Função de busca por âncora
-document.getElementById("searchButton").addEventListener("click", function(event) {
-  event.preventDefault(); // Evita comportamento padrão
+function performSearch() {
   const searchTerm = normalizeString(document.getElementById("search").value.trim());
 
   // Verifica se o termo pesquisado corresponde a uma expressão regular definida
@@ -97,5 +133,19 @@ document.getElementById("searchButton").addEventListener("click", function(event
       }
   } else {
       showAlert("Nenhum resultado encontrado para: " + searchTerm);
+  }
+}
+
+// Escuta o clique no botão de busca
+document.getElementById("searchButton").addEventListener("click", function(event) {
+  event.preventDefault(); // Evita comportamento padrão
+  performSearch();
+});
+
+// Escuta o pressionamento de teclas para detectar "Enter"
+document.getElementById("search").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Evita comportamento padrão
+    performSearch();
   }
 });

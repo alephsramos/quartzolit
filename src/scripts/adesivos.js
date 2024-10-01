@@ -1,3 +1,4 @@
+// Primeira seção de botões
 const buttons = document.querySelectorAll('.adesivos__btns button');
 const image = document.getElementById('produto-img');
 
@@ -7,10 +8,12 @@ buttons.forEach(button => {
         buttons.forEach(btn => btn.classList.remove('active'));
         
         // Adiciona a classe 'active' ao botão clicado
-        button.classList.add('active');
+        this.classList.add('active');
         
-        // Atualiza a imagem com base no botão clicado
-        const newImage = button.getAttribute('data-image');
-        image.src = `assets/img/banners/${newImage}`; // Substitua pelo caminho correto das imagens
+        // Atualiza a imagem
+        const newImage = this.getAttribute('data-image');
+        image.src = `assets/img/banners/${newImage}`; 
     });
 });
+
+// Segunda seção de botões

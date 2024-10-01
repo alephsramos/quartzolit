@@ -73,7 +73,7 @@
     color: var(--background--white);
 }
 
-.adesivos__btns{
+.adesivos__btns2{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -82,7 +82,7 @@
     flex-wrap: wrap;
 }
 
-.adesivos__btns button{
+.adesivos__btns2 button{
     border: 2px solid var(--color--black--quartzolit);
     padding: 10px;
     border-radius: var(--border--radius);
@@ -95,12 +95,12 @@
     gap: 10px;
 }
 
-.adesivos__btns button:hover{
+.adesivos__btns2 button:hover{
     background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
 }
 
-.adesivos__btns button.active {
+.adesivos__btns2 button.active {
     background-color: var(--color--blue--quartzolit);
     color: var(--background--white);
 }
