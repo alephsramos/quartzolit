@@ -56,7 +56,7 @@
         justify-content: center;
     }
     
-    .adesivos__btns{
+    .adesivos__btns2{
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -65,7 +65,7 @@
         flex-wrap: wrap;
     }
     
-    .adesivos__btns button{
+    .adesivos__btns2 button{
         padding: 10px;
         display: flex;
         align-items: center;
