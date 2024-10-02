@@ -29,7 +29,7 @@ const advanceSlide = (gliderInstance) => {
 
 // Função para iniciar o auto-play de slides
 const startAutoPlay = (gliderInstance) => {
-  setInterval(() => advanceSlide(gliderInstance), 2500); // Avança a cada 5 segundos
+  setInterval(() => advanceSlide(gliderInstance), 3500); // Avança a cada 5 segundos
 };
 
 // Adiciona o autoplay para ambos carrosséis (desktop e mobile)
