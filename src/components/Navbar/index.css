@@ -174,7 +174,7 @@
     position: fixed;
     top: 0;
     right: -300px; /* Sidebar fora da tela */
-    width: 300px;
+    width: 200px;
     height: 100%;
     background: #ffffff;
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
