@@ -118,7 +118,7 @@
 .fachadas__imgs img{
     height: 90%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: var(--border--radius);
 }
 
