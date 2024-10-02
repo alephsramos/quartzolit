@@ -94,7 +94,7 @@
     }
     
     .produto__open.open{
-        height: 65vh;
+        height: auto;
         padding: 30px;
     }
     
